@@ -1,5 +1,6 @@
 /*!pseudo.js Copyright (c) 2014 guest271314 
  * License BSD-2-Clause http://opensource.org/licenses/BSD-2-Clause 
+ * get, set css pseudo
  */  
 (function($) {
 jQuery.fn.extend({

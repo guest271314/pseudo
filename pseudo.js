@@ -1,6 +1,7 @@
+/*!pseudo.js Copyright (c) 2014 guest271314 
+ * License BSD-2-Clause http://opensource.org/licenses/BSD-2-Clause 
+ */  
 (function($) {
-/*!pseudo.js Copyright (c) 2014 guest271314 License BSD-2-Clause */  
-
 jQuery.fn.extend({
     getPseudo : function (pseudo, prop ) {
       var props = window.getComputedStyle (

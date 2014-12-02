@@ -19,7 +19,7 @@ jQuery.fn.extend({
                 .text(function (index, prop) {
                 return prop.replace(r, newprop)
                 }) 
-              : prop 
+              : p
              );
     }
 })

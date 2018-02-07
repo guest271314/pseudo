@@ -16,10 +16,11 @@
       var p = elem.getPseudo(_pseudo, _prop);
       var r = p !== "" ? new RegExp(p) : false;
       var selector = $.map(elem, function(val, key) {
-        return [val.tagName
-                , val.id 
-                  ? "#" + val.id : null
-                , val.className ? "." + val.className : null]
+          return [
+              val.tagName,
+              val.id ? "#" + val.id : null,
+              val.className ? "." + (val.className.split(/(\s+)/).filter( function(e) { return e.trim().length > 0; } ).join('.')) : null
+          ];
       });
       var _setProp = "\n" + selector.join("")
         .toLowerCase()
